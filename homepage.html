@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="">Happy Birthday Nimah</a>
+            <i class='bx bxs-heart heart' style="color: orangered;"></i>
+        </div>
+        
+        <div class="nav">
+            <ul>
+                <li><a href="#home" class="link active-page">Home</a></li>
+                <li><a href="message.html" class="link">Message</a></li>
+               <li><a href="gallery.html" class="link">Gallery</a></li>
+                <li><a href="video.html" class="link">Videos</a></li>
+            </ul>
+        </div>
+        <img src="./image/imagefolder/cil--menu.png" class="open-nav" alt="">
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="note">
+                <i class='bx bxs-heart heart-2' style="color: orangered;"></i>
+                <div class="home-note">Happy birthday to my incredible girlfriend! You're the sunshine in my life, bringing joy, laughter, and adventure. I cherish your kind heart, beautiful smile, and infectious laugh. Here's to another year of making memories, sharing dreams, and loving each other more with each passing day. Forever yours, happy birthday!</div>
+                <div><i class='bx bxs-heart heart-2' style="color: orangered;"></i></div>
+            </div>
+            <i class='bx bxs-heart heart-2' style="color: orangered;"></i>
+            <img src="./image/imagefolder/bday-img-10.jpg" width="400" height="300" alt="">
+            <i class='bx bxs-heart heart-2' style="color: orangered;"></i>
+        </section>
+    </main>
+    <script>
+        const openNav = document.querySelector('.open-nav');
+        openNav.addEventListener('click',()=>{
+            const nav = document.querySelector('.nav');
+            nav.classList.toggle('active')
+            if( nav.classList.contains('active')){
+                openNav.src = './image/imagefolder/bx--x.png';
+            }else{
+                openNav.src = './image/imagefolder/cil--menu.png'
+            };
+        });
+
+        const link = document.querySelectorAll('.link');
+        link.forEach(link => link.addEventListener('click',()=>{
+            const nav = document.querySelector('.nav');
+            nav.classList.remove('active');
+            openNav.src = './image/imagefolder/cil--menu.png';
+        }));
+    </script>
+</body>
+</html>

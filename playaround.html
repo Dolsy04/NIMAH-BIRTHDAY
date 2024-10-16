@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>playAround page</title>
+    <link rel="stylesheet" href="playaround.css">
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "ns6kyiLh8K3bZe6Xc",
+            });
+        })();
+    </script>
+</head>
+<body>
+    <div>
+        <button class="exit" onclick="window.location.href='index.html'">Exit Page</button>
+    </div>
+    <div class="container">
+       <h1>Let's have some questions and answers here.</h1>
+        <div class="form-container">
+            <!-- <form action="" id="myform"> -->
+                <div class="form">
+                    <div class="first-row">
+                        <div>
+                            <label for="name">Input your Name*</label><br>
+                            <input type="text" name="name" id="name" required><br>
+                        </div>
+                        <div>
+                            <label for="bfname">Input your boyfriend Name*</label><br>
+                            <input type="text" name="bfname" id="bfname" required><br>
+                        </div>
+                        <div>
+                            <label for="age">Input your Age*</label><br>
+                            <input type="number" name="age" id="age" required><br>
+                        </div>
+                        <div>
+                            <label for="nickname">NickName called by your boyfriend*</label><br>
+                            <input type="text" name="nickname" id="nickname" required><br>
+                        </div>
+                        <div>
+                            <label for="relationship">How long is your Relationship*</label><br>
+                            <input type="text" name="relationship" id="relationship" required><br>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div>
+                            <label for="goal">Goal of your relationship*</label><br>
+                            <input type="text" name="goal" id="goal" required><br>
+                        </div>
+                        <div>
+                            <label for="work">One thing to work on in your Relationship*</label><br>
+                            <input type="text" name="work" id="work" required><br>
+                        </div>
+                        <div>
+                            <label for="Craziest">Craziest thing you've done in Relationship*</label><br>
+                            <input type="text" name="Craziest" id="Craziest" required><br>
+                        </div>
+                        <div>
+                            <label for="accomplishing">Something you're proud of accomplishing in your Relationship*</label><br>
+                            <input type="text" name="accomplishing" id="accomplishing" required><br>
+                        </div>
+                        <div>
+                            <label for="oname">If not him than who*</label><br>
+                            <input type="text" name="oname" id="oname" required><br>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <label for="message">Leave a message for Him*</label><br>
+                    <textarea name="message" id="message" cols="120" rows="10" placeholder="Leave a message for your Man"></textarea>
+                </div>
+                <div>
+                    <button class="submit-btn" onclick="sendMailBtn()">submit</button>
+                </div>
+            <!-- </form> -->
+        </div>
+   </div>
+
+   <script src="playaround.js"></script>
+</body>
+</html>

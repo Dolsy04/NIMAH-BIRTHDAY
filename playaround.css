@@ -1,0 +1,254 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to right, lightblue, lightpink,lightblue,lightgray);
+    width: 100%;
+}
+@media screen and (min-width: 1024px) {
+    
+    .exit{
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin: 10px 20px 20px 0;
+        padding: 10px;
+        background-color: transparent;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 16px;
+        outline: none;
+        border: 1px solid black;
+        transition: .3s ease-in-out;
+    }
+    button:hover{
+        background-color: gray;
+        color: white;
+    }
+    h1{
+        text-align: center;
+    }
+    .form{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        /* border: 1px solid black; */
+    }
+    .first-row div, .row div{
+        background: white;
+        margin-top: 20px;
+        padding: 20px;
+        height: 120px;
+        width: 80%;
+    }
+    .first-row, .row{
+        width: 50%;
+        margin: 10px auto;
+    }
+    .container{
+        background-color: whitesmoke;
+        margin: 60px auto;
+        width: 95%;
+        padding: 30px;
+    }
+    .form div input{
+        width: 100%;
+        height: 40px;
+        margin: 10px 0 0;
+        border: 1px solid black;
+        outline: none;
+        padding: 0 0 0 10px;
+        font: 500 15px serif;
+    }
+    textarea{
+        width: 90%;
+        margin: 10px auto;
+        padding: 10px;
+        border:1px solid black;
+        outline: none;
+        font: 500 15px serif;
+    }
+    .submit-btn{
+        width: 50%;
+        height: 40px;
+        background: gray;
+        color: white;
+        font: 600 18px serif;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        margin: 0 0 0 190px;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        border-radius: 50px;
+        transition: .3s ease;
+    }
+    .submit-btn:hover{
+        background: #3d3a3a;
+    }
+}
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+    .exit{
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin: 10px 20px 20px 0;
+        padding: 10px;
+        background-color: transparent;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 16px;
+        outline: none;
+        border: 1px solid black;
+        transition: .3s ease-in-out;
+    }
+    button:hover{
+        background-color: gray;
+        color: white;
+    }
+    h1{
+        text-align: center;
+    }
+    .form{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .first-row div, .row div{
+        background: white;
+        margin-top: 20px;
+        padding: 20px;
+        height: 120px;
+        width: 80%;
+    }
+    .first-row, .row{
+        width: 50%;
+        margin: 10px auto;
+    }
+    .container{
+        background-color: whitesmoke;
+        margin: 60px auto;
+        width: 95%;
+        padding: 30px;
+    }
+    .form div input{
+        width: 100%;
+        height: 40px;
+        margin: 10px 0 0;
+        border: 1px solid black;
+        outline: none;
+        padding: 0 0 0 10px;
+        font: 500 15px serif;
+    }
+    textarea{
+        width: 90%;
+        margin: 10px auto;
+        padding: 10px;
+        border:1px solid black;
+        outline: none;
+        font: 500 15px serif;
+    }
+    .submit-btn{
+        width: 50%;
+        height: 40px;
+        background: gray;
+        color: white;
+        font: 600 18px serif;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        margin: 0 0 0 190px;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        border-radius: 50px;
+        transition: .3s ease;
+    }
+    .submit-btn:hover{
+        background: #3d3a3a;
+    }
+}
+@media screen and (max-width: 767px) {
+    .exit{
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin: 10px 20px 20px 0;
+        padding: 10px;
+        background-color: transparent;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 16px;
+        outline: none;
+        border: 1px solid black;
+        transition: .3s ease-in-out;
+    }
+    button:hover{
+        background-color: gray;
+        color: white;
+    }
+    h1{
+        text-align: center;
+    }
+    .form{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        flex-direction: column;
+    }
+    .first-row div, .row div{
+        background: white;
+        margin-top: 20px;
+        padding: 20px;
+        height: 130px;
+        width: 100%;
+    }
+    .first-row, .row{
+        width: 100%;
+        margin: 10px auto;
+    }
+    .container{
+        background-color: whitesmoke;
+        margin: 60px auto;
+        width: 100%;
+        padding: 30px;
+    }
+    .form div input{
+        width: 100%;
+        height: 40px;
+        margin: 10px 0 0;
+        border: 1px solid black;
+        outline: none;
+        padding: 0 0 0 10px;
+        font: 500 15px serif;
+    }
+    textarea{
+        width: 95%;
+        margin: 10px auto;
+        padding: 10px;
+        border:1px solid black;
+        outline: none;
+        font: 500 15px serif;
+    }
+    .submit-btn{
+        width: 100%;
+        height: 40px;
+        background: gray;
+        color: white;
+        font: 600 18px serif;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        border-radius: 50px;
+        transition: .3s ease;
+    }
+    .submit-btn:hover{
+        background: #3d3a3a;
+    }
+}

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCTOBER 22</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: linear-gradient(to right, #9999ff, #add8e6, #ffe4e8, #9999ff);
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* flex-direction: column; */
+        }
+        @media screen and (min-width:1024px) {
+            h1{
+                font-family: sans-serif;
+                font-size: 50px;
+            }
+            .container{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                margin-top: 30px;
+            }
+            .timer{
+                margin: 25px 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .timer div{
+                margin: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .timer p{
+                font-size: 30px;
+                color: blue;
+                font-weight: 700;
+                font-family: sans-serif;
+            } 
+            .start-container{
+                display: flex;
+                justify-content: space-around;
+                width: 90%;
+                height: 70%;
+            }
+            .start-container img{
+                border-radius: 8px;
+            }
+            .play-around{
+                padding: 8px 10px;
+                border-radius: 6px;
+                background: linear-gradient(to right, #9999ff, #add8e6, #ffe4e8, #9999ff);
+                font-size: 18px;
+                font-weight: 600;
+                font-family: sans-serif;
+                cursor: pointer;
+                border: 1px solid gray;
+                box-shadow: 1px 1px 10px rgba(28, 13, 94, 0.815);
+                animation: button-animation 5s infinite linear;
+            }
+            @keyframes button-animation {
+                0%{
+                    background: linear-gradient(to right, #9999ff, #add8e6, #ffe4e8, #9999ff);
+                }
+                30%{
+                    background: linear-gradient(to right, #add8e6, #9999ff, #ffe4e8, #9999ff);
+                }
+                70%{
+                    background: linear-gradient(to right, #557079, #03161646, #ffffff, #9999ff);
+                }
+                100%{
+                    background: transparent;
+                }
+            }
+        }
+        
+        @media screen and (min-width: 767px) and (max-width: 1023px) {
+            h1{
+            font-family: sans-serif;
+            font-size: 50px;
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 30px;
+        }
+        .timer{
+            margin: 25px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .timer div{
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .timer p{
+            font-size: 30px;
+            color: blue;
+            font-weight: 700;
+            font-family: sans-serif;
+        } 
+        .start-container{
+            display: flex;
+            justify-content: space-around;
+            width: 90%;
+            height: 70%;
+        }
+        .start-container img{
+            border-radius: 8px;
+        }
+        .play-around{
+            padding: 8px 10px;
+            border-radius: 6px;
+            background: linear-gradient(to right, #9999ff, #add8e6, #ffe4e8, #9999ff);
+            font-size: 18px;
+            font-weight: 600;
+            font-family: sans-serif;
+            cursor: pointer;
+            border: 1px solid gray;
+            box-shadow: 1px 1px 10px rgba(28, 13, 94, 0.815);
+            animation: button-animation 5s infinite linear;
+        }
+        @keyframes button-animation {
+            0%{
+                background: linear-gradient(to right, #9999ff, #add8e6, #ffe4e8, #9999ff);
+            }
+            30%{
+                background: linear-gradient(to right, #add8e6, #9999ff, #ffe4e8, #9999ff);
+            }
+            70%{
+                background: linear-gradient(to right, #557079, #03161646, #ffffff, #9999ff);
+            }
+            100%{
+                background: transparent;
+            }
+        }
+        }
+        @media screen and (max-width: 767px) {
+            h1{
+            font-family: sans-serif;
+            font-size: 30px;
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 30px;
+        }
+        .timer{
+            margin: 25px 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .timer div{
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .timer p{
+            font-size: 20px;
+            color: blue;
+            font-weight: 700;
+            font-family: sans-serif;
+        } 
+        .start-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 100%;
+            height: 70%;
+        }
+        .start-container img{
+            border-radius: 8px;
+            margin: 20px 0;
+            width: 100%;
+            object-fit: cover;
+        }
+        .play-around{
+            padding: 8px 10px;
+            border-radius: 6px;
+            background: linear-gradient(to right, #9999ff, #add8e6, #ffe4e8, #9999ff);
+            font-size: 18px;
+            font-weight: 600;
+            font-family: sans-serif;
+            cursor: pointer;
+            border: 1px solid gray;
+            box-shadow: 1px 1px 10px rgba(28, 13, 94, 0.815);
+            animation: button-animation 5s infinite linear;
+        }
+        @keyframes button-animation {
+            0%{
+                background: linear-gradient(to right, #9999ff, #add8e6, #ffe4e8, #9999ff);
+            }
+            30%{
+                background: linear-gradient(to right, #add8e6, #9999ff, #ffe4e8, #9999ff);
+            }
+            70%{
+                background: linear-gradient(to right, #557079, #03161646, #ffffff, #9999ff);
+            }
+            100%{
+                background: transparent;
+            }
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="start-container">
+        <div class="container">
+            <h1>Birthday Countdown</h1>
+
+            <div class="timer">
+                <div>
+                    <p id="days">00</p>
+                    <p>Days</p>
+                </div>
+                <div>
+                    <p id="hours">00</p>
+                    <p>Hours</p>
+                </div>
+                <div>
+                    <p id="minutes">00</p>
+                    <p>Minutes</p>
+                </div>
+                <div>
+                    <p id="seconds">00</p>
+                    <p>Seconds</p>
+                </div>
+            </div>
+            <button class="play-around">Click here to Play around</button>
+        </div>
+        <img src="image/image countdown/countdownCake.png"  width="450px" height="500px">
+    </div>
+
+    <script>
+        document.querySelector('.play-around').addEventListener('click',()=>{
+            window.location.href = 'playaround.html';
+        });
+
+        const countDownDate = new Date('Oct 22, 2024 00:00:00').getTime();
+        const set_Interval = setInterval(function(){
+            const now = new Date().getTime();
+            const distance = countDownDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor(distance % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
+            const minutes = Math.floor(distance % (1000 * 60 * 60 ) / (1000 * 60));
+            const seconds = Math.floor(distance % (1000 * 60) / (1000));
+
+
+            document.getElementById('days').innerHTML = days;
+            document.getElementById('hours').innerHTML = hours;
+            document.getElementById('minutes').innerHTML = minutes;
+            document.getElementById('seconds').innerHTML = seconds;
+
+            if(distance < 1){
+                window.location.href = 'homepage.html';
+            };
+
+        },1000);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="video.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="">Happy Birthday Nimah</a>
+            <i class='bx bxs-heart heart' style="color: orangered;"></i>
+        </div>
+        
+        <div class="nav">
+            <ul>
+                <li><a class="link" href="homepage.html">Home</a></li>
+
+                <li><a class="link" href="message.html">Message</a></li>
+                
+                <li><a href="gallery.html" class="link">Gallery</a></li>
+
+                <li><a href="video.html" class="link active-page">Videos</a></li>
+
+            </ul>
+        </div>
+            <img src="./image/imagefolder/cil--menu.png" width="30" height="30" class="open-nav" alt="">
+    </header>
+
+    <main>
+        <section class="videos">
+            <div class="video-container">
+                <h3>Spotlight of Scholar Nimah Reading</h3>
+                <div class="video-list">
+                    <div class="video-item">
+                        <video src="./image/videofolder/video2.mp4" controls></video>
+                    </div>
+                    <div class="video-item">
+                        <video src="./image/videofolder/video4.mp4" controls></video>
+                    </div>
+                    <div class="video-item">
+                        <video src="./image/videofolder/video5.mp4" controls></video>
+                    </div>
+                    <div class="video-item">
+                        <video src="./image/videofolder/video6.mp4" controls></video>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="videos">
+            <div class="video-container">
+                <h3>Tiktok Video of Nimah</h3>
+                <div class="video-list">
+                    <div class="video-item">
+                        <video src="./image/videofolder/tk1.mp4" controls></video>
+                    </div>
+                    <div class="video-item">
+                        <video src="./image/videofolder/tk2.mp4" controls></video>
+                    </div>
+                    <div class="video-item">
+                        <video src="./image/videofolder/tk3.mp4" controls></video>
+                    </div>
+                    <div class="video-item">
+                        <video src="./image/videofolder/tk4.mp4" controls></video>
+                    </div>
+                    <div class="video-item">
+                        <video src="./image/videofolder/tk5.mp4" controls></video>
+                    </div>
+                    <div class="video-item">
+                        <video src="./image/videofolder/tk11.mp4" controls></video>
+                    </div>
+                    <!-- <div class="video-item">
+                        <video src="./image/videofolder/tk12.mp4" controls></video>
+                    </div> -->
+                    <div class="video-item">
+                        <video src="./image/videofolder/tk13.mp4" controls></video>
+                    </div>
+                    <div class="video-item">
+                        <video src="./image/videofolder/tk14.mp4" controls></video>
+                    </div>
+                    <div class="video-item">
+                        <video src="./image/videofolder/tk16.mp4" controls></video>
+                    </div>
+                    <div class="video-item">
+                        <video src="./image/videofolder/tk19.mp4" controls></video>
+                    </div>
+                    <div class="video-item">
+                        <video src="./image/videofolder/tk20.mp4" controls></video>
+                    </div>
+                    <div class="video-item">
+                        <video src="./image/videofolder/tk30.mp4" controls></video>
+                    </div>
+                    <div class="video-item">
+                        <video src="./image/videofolder/tk24.mp4" controls></video>
+                    </div>
+                    <div class="video-item">
+                        <video src="./image/videofolder/tk23.mp4" controls></video>
+                    </div>
+                    <div class="video-item">
+                        <video src="./image/videofolder/tk33.mp4" controls></video>
+                    </div>
+                    <div class="video-item">
+                        <video src="./image/videofolder/tk35.mp4" controls></video>
+                    </div>
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span></p>
+        <p>Develop by DevRhaman</p>
+    </footer>
+
+    <script>
+        const now = new Date();
+        const showYear =  now.getFullYear();
+        document.getElementById('year').innerHTML = showYear;
+
+
+        const openNav = document.querySelector('.open-nav');
+        openNav.addEventListener('click',()=>{
+            const nav = document.querySelector('.nav');
+            nav.classList.toggle('active');
+            if( nav.classList.contains('active')){
+                openNav.src = './image/imagefolder/bx--x.png';
+            }else{
+                openNav.src = './image/imagefolder/cil--menu.png';
+            };
+        });
+
+        const navLink = document.querySelectorAll('.link');
+        navLink.forEach(link => link.addEventListener('click',()=>{
+            const nav = document.querySelector('.nav');
+            nav.classList.remove('active');
+            openNav.src = './image/imagefolder/cil--menu.png';
+        }));
+    </script>
+</body>
+</html>
